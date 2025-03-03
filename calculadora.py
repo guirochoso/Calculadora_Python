@@ -41,7 +41,13 @@ while eh_True:
         resultado = multiplicacao(num1, num2)
         print(resultado)
 
-    if opcao not in (1, 2, 3, 4):
+    if opcao == 5:
+        num1 = float(input('Escolha o valor a ser calculado o percentual: '))
+        num2 = float(input('Escolha o percentual: '))
+        
+        resultado = percentual(num1, num2)
+
+    if opcao not in (1, 2, 3, 4, 5):
         print('Por favor, digite uma opção válida!!!')
 
     continuar = input('Deseja continuar? (S/N): ').upper()
